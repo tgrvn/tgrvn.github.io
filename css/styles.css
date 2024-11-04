@@ -262,6 +262,7 @@ button:hover > .underline-hover-dark::after {
   /* max-width: 480px; */
   padding: 1rem 0.6rem;
   backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border-radius: 6px;
   min-height: 266px !important;
 }
@@ -313,6 +314,7 @@ button:hover > .underline-hover-dark::after {
   background-color: #ff852280;
   border-radius: 100%;
   filter: blur(26px);
+  transform: translate3d(0, 0, 0);
   animation: ball_bouncing 12s linear infinite;
 }
 
@@ -335,8 +337,24 @@ button:hover > .underline-hover-dark::after {
 }
 
 .text-3-blur {
+  position: relative;
   color: transparent;
-  text-shadow: 0 0 4px #ffffff;
+  min-height: 240px;
+}
+
+.text-3-blur::before {
+  content: attr(data-text); /* Используйте атрибут data-text */
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  filter: blur(3px);
+  z-index: -1;
+  font-weight: 900;
+  font-family: "EurostileExtendedBlack", sans-serif;
+  font-size: 2.5rem;
 }
 
 .text-3-dark {
@@ -420,6 +438,7 @@ button:hover > .underline-hover-dark::after {
   transition: opacity 0.3s ease-in-out;
   backdrop-filter: blur(30px);
   background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 /* Для маленьких экранов до 576px */
