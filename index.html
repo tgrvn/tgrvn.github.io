@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/eurostile-extended"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <!-- overflow-hidden -->
+  <body class="dark-bg">
+    <div class="container-fluid position-relative" style="padding-top: 0.1px">
+      <div
+        class="menu opacity-0 d-none position-fixed start-0 top-0 w-100 h-100 z-3"
+      >
+        <div class="container-xxl d-flex justify-content-end">
+          <button class="d-flex align-items-center gap-2 mt-5 p-1 close-btn">
+            CLOSE
+            <object data="./assets/ic_round-close.svg" type=""></object>
+          </button>
+        </div>
+        <div class="container-xxl mt-5 pt-4 pt-lg-3">
+          <div class="align-items-center align-content-center">
+            <div class="row mb-4">
+              <object
+                data="./assets/about_us.svg"
+                class="col-6 col-md-4"
+                type=""
+              ></object>
+            </div>
+
+            <div class="row mb-4">
+              <object
+                data="./assets/for_whom.svg"
+                class="col-6 col-md-4"
+                type=""
+              ></object>
+            </div>
+
+            <div class="row">
+              <object
+                data="./assets/registration.svg"
+                fill="#212121"
+                class="col-7 col-md-5"
+                type=""
+              ></object>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="position-absolute start-0 top-0 z-negative-1 w-100"
+        src="./assets/hero_bg.png"
+        alt=""
+      />
+
+      <div class="container-xxl">
+        <section class="mt-3">
+          <!-- nav -->
+          <nav class="py-4 row text-1 fw-lighter">
+            <div class="col align-content-center">
+              <button class="toggler d-md-none menu-btn menu-toggler">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.888889 13H15.1111C15.6 13 16 12.625 16 12.1667C16 11.7083 15.6 11.3333 15.1111 11.3333H0.888889C0.4 11.3333 0 11.7083 0 12.1667C0 12.625 0.4 13 0.888889 13ZM0.888889 8.83333H15.1111C15.6 8.83333 16 8.45833 16 8C16 7.54167 15.6 7.16667 15.1111 7.16667H0.888889C0.4 7.16667 0 7.54167 0 8C0 8.45833 0.4 8.83333 0.888889 8.83333ZM0 3.83333C0 4.29167 0.4 4.66667 0.888889 4.66667H15.1111C15.6 4.66667 16 4.29167 16 3.83333C16 3.375 15.6 3 15.1111 3H0.888889C0.4 3 0 3.375 0 3.83333Z"
+                  />
+                </svg>
+              </button>
+
+              <button class="toggler d-none d-md-block menu-toggler">
+                <span
+                  class="underline-hover-light d-flex align-items-center gap-2"
+                >
+                  MENU
+
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 7.998H8V12.998C8 13.2632 7.89464 13.5176 7.70711 13.7051C7.51957 13.8926 7.26522 13.998 7 13.998C6.73478 13.998 6.48043 13.8926 6.29289 13.7051C6.10536 13.5176 6 13.2632 6 12.998V7.998H1C0.734784 7.998 0.48043 7.89264 0.292893 7.70511C0.105357 7.51757 0 7.26322 0 6.998C0 6.73278 0.105357 6.47843 0.292893 6.29089C0.48043 6.10336 0.734784 5.998 1 5.998H6V0.998001C6 0.732785 6.10536 0.47843 6.29289 0.290894C6.48043 0.103358 6.73478 -0.0019989 7 -0.0019989C7.26522 -0.0019989 7.51957 0.103358 7.70711 0.290894C7.89464 0.47843 8 0.732785 8 0.998001V5.998H13C13.2652 5.998 13.5196 6.10336 13.7071 6.29089C13.8946 6.47843 14 6.73278 14 6.998C14 7.26322 13.8946 7.51757 13.7071 7.70511C13.5196 7.89264 13.2652 7.998 13 7.998Z"
+                      fill="#DEDEDE"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div
+              class="col-5 d-flex align-content-center justify-content-center"
+            >
+              <object
+                data="./assets/FCSFX - LH - FC - DB.svg"
+                class="img-fluid"
+                type=""
+              ></object>
+            </div>
+
+            <div class="col align-items-center d-flex justify-content-end">
+              <button class="toggler">
+                <span
+                  class="underline-hover-light d-flex align-items-center gap-1"
+                >
+                  <object
+                    data="./assets/ic_arrow_down.svg"
+                    style="transform: rotate(180deg)"
+                    type=""
+                  ></object>
+
+                  EN
+                </span>
+              </button>
+            </div>
+          </nav>
+
+          <!-- hero -->
+          <object
+            class="mt-3"
+            data="./assets/banner.svg"
+            width="100%"
+            type=""
+          ></object>
+
+          <div class="row justify-content-end mt-3">
+            <div class="col col-md-8 col-xl-5">
+              <p class="text-2 text-uppercase">
+                /Мы — ваш надежный фокус на успех. Команда опытных арбитражников
+                готова обеспечить вас самыми высокими результатами/
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="mt-3 mt-md-4 d-flex justify-content-center align-items-center"
+          >
+            <a href="#reg" class="primary-btn">
+              <object
+                class="join_us_icon"
+                data="./assets/arrow_up_to_right.svg"
+                type=""
+              ></object>
+
+              <span class="underline-hover-dark"> JOIN US </span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="container-fluid position-relative overflow-hidden">
+      <div
+        class="card-wrapper-h container-xxl start-50 translate-middle position-absolute w-100 left-0"
+        style="top: 645px"
+      >
+        <div class="animated_ball"></div>
+      </div>
+
+      <div class="container-xxl">
+        <!-- about -->
+        <section class="mt-5 pt-4">
+          <div class="row align-items-end gap-lg-3">
+            <div class="col-6 col-md-4">
+              <object
+                data="./assets/about_us.svg"
+                class="img-fluid"
+                type=""
+              ></object>
+            </div>
+
+            <div class="col-12 col-lg mt-2 d-flex justify-content-end">
+              <p class="mb-1 text-2 text-uppercase">
+                /FocusFox — это проверенная партнерская сеть, которая предлагает
+                качественный трафик. Наш ключевой приоритет — это непрерывное
+                взаимодействие с нашими партнерами и стремление к достижению
+                стабильных и высоких результатов для каждого/
+              </p>
+            </div>
+          </div>
+
+          <div class="my-5 col offset-md-2 offset-lg-3 offset-xxl-2 col-md-5">
+            <h2 class="text-3 text-center text-uppercase">МЫ предоставим</h2>
+          </div>
+
+          <div class="col">
+            <div
+              id="carouselExampleCaptions"
+              data-bs-ride="carousel"
+              class="carousel slide d-md-none"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="custom-card card-dark text-uppercase">
+                    <span class="text-4">01</span>
+                    <h3 class="text-1 mt-2">[ Поддержка 24/7 ]</h3>
+                    <p class="text-5 mt-4">
+                      Вам не придется беспокоиться о ночных потоках трафика.
+                      Наша команда всегда на связи, чтобы гарантировать
+                      бесперебойную работу и высокую эффективность вашего
+                      бизнеса.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-card card-dark text-uppercase">
+                    <span class="text-4">02</span>
+                    <h3 class="text-1 mt-2">[ Интеграции ]</h3>
+                    <p class="text-5 mt-4">
+                      Наша команда готова помочь вам с любой интеграцией. Мы
+                      оперативно и надежно настроим все процессы, чтобы
+                      обеспечить вам качественный сервис и стабильную работу.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-card card-orange text-uppercase">
+                    <span class="text-4 text-white">03</span>
+                    <h3 class="text-1 mt-2">[ Финансовая ответственность ]</h3>
+                    <p class="text-5 mt-4">
+                      Наша команда гарантирует своевременные выплаты и сверки,
+                      предлагая лучшие условия как для брокеров, так и для
+                      аффилиатов.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-indicators position-static mt-3">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+            </div>
+
+            <div
+              id="cards-md"
+              class="d-none d-md-block position-relative card-wrapper-h"
+            >
+              <div
+                class="md-card-heigh md-card-width custom-card card-dark position-absolute top-0 start-0 text-uppercase"
+                style="margin-right: 50%"
+              >
+                <span class="text-4">01</span>
+                <h3 class="text-1 mt-2">[ Поддержку 24/7 ]</h3>
+                <p class="max-w-80 text-5 mt-4">
+                  Вам не придется беспокоиться о ночных потоках трафика. Наша
+                  команда всегда на связи, чтобы гарантировать бесперебойную
+                  работу и высокую эффективность вашего бизнеса.
+                </p>
+              </div>
+
+              <div
+                class="md-card-height md-card-width custom-card card-dark bottom-0 position-absolute horizontal-middle text-uppercase"
+              >
+                <span class="text-4">02</span>
+                <h3 class="text-1 mt-2">[ Интеграции ]</h3>
+                <p class="max-w-80 text-5 mt-4">
+                  Наша команда готова помочь вам с любой интеграцией. Мы
+                  оперативно и надежно настроим все процессы, чтобы обеспечить
+                  вам качественный сервис и стабильную работу.
+                </p>
+              </div>
+
+              <div
+                class="md-card-height md-card-width custom-card card-orange position-absolute end-0 text-uppercase"
+                style="margin-left: 50%; top: 40px"
+              >
+                <span class="text-4 text-white">03</span>
+                <h3 class="text-1 mt-2">[ Наши ГЕО ]</h3>
+                <p class="max-w-80 text-5 mt-4">
+                  Мы готовы предложить нашим партнерам лучшие офферы для Tier 1,
+                  Tier 2 и Tier 3, обсудить специфику каждого ГЕО и представить
+                  наиболее привлекательные предложения в этом направлении.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 d-flex justify-content-center align-items-center">
+            <a href="#reg" class="primary-btn">
+              <object
+                class="join_us_icon"
+                data="./assets/arrow_up_to_right.svg"
+                type=""
+              ></object>
+
+              <span class="underline-hover-dark"> JOIN US </span>
+            </a>
+          </div>
+        </section>
+
+        <!-- For whom -->
+
+        <section class="mt-5 pt-4">
+          <div class="row gap-lg-3">
+            <div class="col-6 col-md-4">
+              <object
+                data="./assets/for_whom.svg"
+                class="img-fluid"
+                type=""
+              ></object>
+            </div>
+
+            <div
+              class="col-12 col-md-10 col-lg px-md-0 align-content-end justify-content-end"
+            >
+              <p class="mb-1 text-2 text-uppercase">
+                /Мы высоко ценим сотрудничество как с рекламодателями, так и с
+                аффилиатами. Для нас важно развивать отношения, которые будут
+                интересны обеим сторонам в долгосрочной перспективе/
+              </p>
+            </div>
+          </div>
+
+          <!-- style="min-height: 367px" -->
+          <div class="row mt-5">
+            <div
+              class="col-12 col-lg-6 d-flex flex-lg-column justify-content-between align-content-center justify-content-lg-center gap-5 gap-lg-3 mb-4 overflow-x-auto"
+            >
+              <h6 class="text-3 text-3-dark">
+                <button
+                  class="switch switch-active text-uppercase"
+                  id="webmaster"
+                >
+                  аффилейт
+                </button>
+              </h6>
+
+              <h6 class="text-3 text-3-dark">
+                <button
+                  class="switch switch-hover text-uppercase"
+                  id="advertiser"
+                >
+                  рекламодатель
+                </button>
+              </h6>
+            </div>
+
+            <div class="col position-relative" style="min-height: 317px">
+              <div class="tab tab-show w-100" id="webmaster-tab">
+                <div class="accordion" id="web-accordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="hw1">
+                      <button
+                        class="accordion-button text-1 text-uppercase"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cw1"
+                        aria-expanded="true"
+                        aria-controls="cw1"
+                      >
+                        <span class="me-3">01</span>
+                        <span>Trust and Reliability Web</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="cw1"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="hw1"
+                      data-bs-parent="#web-accordion"
+                    >
+                      <div class="accordion-body">
+                        <div class="ml-26">
+                          We value our affiliates and aim for long-term
+                          relationships. Our friendly team and conscientious
+                          work allow us to earn the trust of our partners and
+                          maintain a high reputation in the industry.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="hw2">
+                      <button
+                        class="accordion-button text-1 text-uppercase"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cw2"
+                        aria-expanded="true"
+                        aria-controls="cw2"
+                      >
+                        <span class="me-3">02</span>
+                        <span>Support and Integration</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="cw2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="hw2"
+                      data-bs-parent="#web-accordion"
+                    >
+                      <div class="accordion-body">
+                        <div class="ml-26">
+                          We value our affiliates and aim for long-term
+                          relationships. Our friendly team and conscientious
+                          work allow us to earn the trust of our partners and
+                          maintain a high reputation in the industry.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="hw3">
+                      <button
+                        class="accordion-button text-1 text-uppercase"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cw3"
+                        aria-expanded="true"
+                        aria-controls="cw3"
+                      >
+                        <span class="me-3">03</span>
+                        <span>Flexibility and Speed of Payouts</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="cw3"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="hw3"
+                      data-bs-parent="#web-accordion"
+                    >
+                      <div class="accordion-body">
+                        <div class="ml-26">
+                          We value our affiliates and aim for long-term
+                          relationships. Our friendly team and conscientious
+                          work allow us to earn the trust of our partners and
+                          maintain a high reputation in the industry.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab d-none w-100" id="advertiser-tab">
+                <div class="accordion" id="adv-accrodion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="hw1">
+                      <button
+                        class="accordion-button text-1 text-uppercase"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cw1"
+                        aria-expanded="true"
+                        aria-controls="cw1"
+                      >
+                        <span class="me-3">01</span>
+                        <span>Безопасность</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="cw1"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="hw1"
+                      data-bs-parent="#adv-accrodion"
+                    >
+                      <div class="accordion-body">
+                        <div class="ml-26">
+                          Наша команда гарантирует полный контроль на каждом
+                          этапе, что позволяет избежать неожиданных рисков и
+                          быть успешным и обеспечить стабильную работу.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="hw2">
+                      <button
+                        class="accordion-button text-1 text-uppercase"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cw2"
+                        aria-expanded="true"
+                        aria-controls="cw2"
+                      >
+                        <span class="me-3">02</span>
+                        <span>Оплата</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="cw2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="hw2"
+                      data-bs-parent="#adv-accrodion"
+                    >
+                      <div class="accordion-body">
+                        <div class="ml-26">
+                          Для наших партнёров доступны разные модели оплаты,
+                          такие как CPL и CPA+CRG, так же мы открыты для
+                          перехода на СПА при длительных отношениях.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="hw3">
+                      <button
+                        class="accordion-button text-1 text-uppercase"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cw3"
+                        aria-expanded="true"
+                        aria-controls="cw3"
+                      >
+                        <span class="me-3">03</span>
+                        <span>“Focus for our clients”</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="cw3"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="hw3"
+                      data-bs-parent="#adv-accrodion"
+                    >
+                      <div class="accordion-body">
+                        <div class="ml-26">
+                          Каждого рекламодателя мы ценим и стремимся к
+                          построению долгосрочных партнерских отношений. Мы
+                          открыты к обсуждению ваших пожеланий и требований к
+                          трафику.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 d-flex justify-content-center align-items-center">
+            <a href="#reg" class="primary-btn">
+              <object
+                class="join_us_icon"
+                data="./assets/arrow_up_to_right.svg"
+                type=""
+              ></object>
+
+              <span class="underline-hover-dark"> JOIN US </span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- registration -->
+    <div
+      id="reg"
+      class="mt-5 pt-4 container-fluid position-relative overflow-hidden"
+    >
+      <img
+        src="./assets/reg_bg.png"
+        class="position-absolute start-0 left-0 z-negative-1 w-100"
+        alt=""
+      />
+
+      <div class="container-xxl">
+        <section class="pb-lg-5">
+          <div class="row">
+            <div class="col-5">
+              <object
+                data="./assets/registration.svg"
+                class="img-fluid object-fit-cover"
+                type=""
+              ></object>
+            </div>
+
+            <div class="col-12 col-md align-content-end">
+              <p class="mb-1 text-2 text-uppercase">
+                /Пожалуйста, заполните контактную форму, мы вскоре с вами
+                свяжемся/
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="row justify-content-center mt-5 d-lg-flex justify-content-lg-between"
+          >
+            <div class="col-12 col-md-6 col-lg-5 mb-3 align-content-center">
+              <h5
+                class="text-center text-md-start text-uppercase text-3 text-3-blur"
+              >
+                paf your traffic into money
+              </h5>
+            </div>
+
+            <div class="col-12 col-sm-9 col-md-6 col-lg-5 mt-lg-5">
+              <form action="" class="reg-form">
+                <input
+                  class="primary-txt-input text-1"
+                  type="text"
+                  placeholder="Название компании"
+                  name="name"
+                />
+                <input
+                  class="primary-txt-input mt-3 text-1"
+                  type="text"
+                  placeholder="Telegram/Skype"
+                  name="social"
+                />
+
+                <div class="mt-3">
+                  <div
+                    class="d-flex justify-content-between justify-content-xl-start gap-1 gap-lg-5 align-items-center"
+                  >
+                    <label
+                      class="d-flex gap-2 align-items-center text-1 custom_checkbox"
+                      for="web"
+                    >
+                      <input
+                        type="radio"
+                        name="company_type"
+                        id="web"
+                        value="webmaster"
+                        checked
+                      />
+                      <span></span>
+                      аффилейт
+                    </label>
+
+                    <label
+                      class="d-flex gap-2 align-items-center text-1 custom_checkbox"
+                      for="adv"
+                    >
+                      <input
+                        type="radio"
+                        name="company_type"
+                        id="adv"
+                        value="advertiser"
+                      />
+                      <span></span>
+                      рекламодатель
+                    </label>
+                  </div>
+                </div>
+
+                <textarea
+                  placeholder="Короткое описание..."
+                  class="w-100 primary-txt-input mt-3 text-1"
+                  id=""
+                ></textarea>
+
+                <button type="submit" class="primary-btn mt-5 mx-auto me-md-0">
+                  <object
+                    class="join_us_icon"
+                    data="./assets/arrow_up_to_right.svg"
+                    type=""
+                  ></object>
+
+                  <span class="underline-hover-dark"> JOIN US </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-5 pt-4 pt-lg-5 pb-5 row">
+          <div class="col-7 col-md-4">
+            <object
+              data="./assets/FCSFX - LH - FC - DB.svg"
+              class="img-fluid w-75"
+              type=""
+            ></object>
+
+            <div class="mt-3">
+              <p class="mb-1">Киев, Украина</p>
+              <p class="mb-1">2024 © Privacy Policy</p>
+              <p class="mb-0 d-md-none">focusfox@mail.com</p>
+            </div>
+          </div>
+
+          <div
+            class="d-none d-md-block col-md-4 col-lg-5 text-center align-content-end"
+          >
+            <p class="mb-0">focusfox@mail.com</p>
+          </div>
+
+          <div class="col-5 col-md align-content-end text-end">
+            <div
+              class="d-flex gap-3 gap-md-4 align-items-end justify-content-center justify-content-md-end flex-md-row flex-column"
+            >
+              <img
+                src="./assets/cib_facebook.svg"
+                class="col-2 col-md-1"
+                type=""
+              />
+              <img
+                src="./assets/ph_instagram-logo-fill.svg"
+                class="col-2 col-md-1"
+                type=""
+              />
+              <img
+                src="./assets/ic_baseline-telegram.svg"
+                class="col-2 col-md-1"
+                type=""
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/switch-tabs.js"></script>
+    <script src="./js/menu-toggler.js"></script>
+  </body>
+</html>
