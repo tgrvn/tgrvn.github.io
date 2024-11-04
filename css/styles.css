@@ -266,7 +266,7 @@ button:hover > .underline-hover-dark::after {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-radius: 6px;
-  min-height: 288px !important;
+  min-height: 300px !important;
 }
 
 .sm-card-height {
