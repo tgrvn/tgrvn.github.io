@@ -266,7 +266,7 @@ button:hover > .underline-hover-dark::after {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-radius: 6px;
-  min-height: 300px !important;
+  min-height: 310px !important;
 }
 
 .sm-card-height {
@@ -340,11 +340,11 @@ button:hover > .underline-hover-dark::after {
 
 .text-3-blur {
   color: #fff;
-  filter: blur(3px);
+  filter: blur(2px);
   transform: translate3d(0, 0, 0);
   font-weight: 900;
   font-family: "EurostileExtendedBlack", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .text-3-dark {
