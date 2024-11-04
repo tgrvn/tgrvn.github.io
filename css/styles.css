@@ -113,6 +113,16 @@ button:hover > .underline-hover-dark::after {
   box-shadow: none;
 }
 
+.svg-filter {
+  cursor: pointer;
+  width: 100%;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(0%) hue-rotate(59deg) brightness(107%) contrast(107%);
+}
+
+.svg-filter:hover {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(87%) saturate(843%) hue-rotate(342deg) brightness(100%) contrast(102%) !important;
+}
+
 #changeInfo {
   list-style-type: none;
   margin: 0;
@@ -253,6 +263,7 @@ button:hover > .underline-hover-dark::after {
   padding: 1rem 0.6rem;
   backdrop-filter: blur(24px);
   border-radius: 6px;
+  min-height: 266px !important;
 }
 
 .sm-card-height {
